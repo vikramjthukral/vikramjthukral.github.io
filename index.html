@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Vikram Thukral — Senior Data Analyst</title>
+<meta name="description" content="Vikram Thukral — Data analytics leader building €10M+ products at Delivery Hero, Berlin.">
+<meta property="og:title" content="Vikram Thukral — Senior Data Analyst">
+<meta property="og:description" content="I don't build dashboards people tolerate. I build data products people rely on.">
+<meta property="og:type" content="website">
+<link rel="icon" type="image/svg+xml" href="favicon.svg">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500&family=Outfit:wght@200;300;400;500&display=swap" rel="stylesheet">
+<style>
+*,*::before,*::after{margin:0;padding:0;box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{background:var(--bg);color:var(--t2);font-family:var(--fb);font-weight:300;line-height:1.7;overflow-x:hidden}
+a{color:inherit;text-decoration:none}
+::selection{background:rgba(216,90,48,.3);color:#f2f2f2}
+:root{--c:#D85A30;--cl:#F0997B;--cg:rgba(216,90,48,.12);--bg:#0c0c0c;--bg2:#111;--bg3:#161616;--bg4:#1a1a1a;--t1:#f0f0f0;--t2:#999;--t3:#666;--t4:#444;--t5:#2a2a2a;--fb:'Outfit',sans-serif;--fm:'JetBrains Mono',monospace}
+
+nav{position:fixed;top:0;left:0;right:0;z-index:100;padding:24px 6vw;display:flex;justify-content:space-between;align-items:center;background:rgba(12,12,12,.85);backdrop-filter:blur(24px);-webkit-backdrop-filter:blur(24px);border-bottom:.5px solid rgba(255,255,255,.03);transition:padding .3s}
+nav.scrolled{padding:16px 6vw}
+.nl{font-family:var(--fm);font-size:13px;color:var(--cl);letter-spacing:2px}
+.nk{display:flex;gap:28px;align-items:center}
+.nk a{font-size:13px;color:var(--t4);transition:color .3s;letter-spacing:.5px}
+.nk a:hover{color:var(--t2)}
+.nc{font-size:12px!important;color:var(--c)!important;border:.5px solid rgba(216,90,48,.35);padding:6px 18px;border-radius:4px;transition:all .3s}
+.nc:hover{background:var(--cg);border-color:var(--c)}
+
+.hero{position:relative;min-height:100vh;display:flex;align-items:center;overflow:hidden}
+.hero-canvas{position:absolute;inset:0;z-index:0}
+.hc{position:relative;z-index:1;padding:140px 8vw 100px;max-width:750px}
+.hl{font-family:var(--fm);font-size:11px;color:var(--t4);letter-spacing:3px;margin-bottom:28px;opacity:0;transform:translateY(20px);animation:fu .8s ease-out .3s forwards}
+.hn{font-family:var(--fb);font-size:clamp(48px,7vw,72px);color:var(--t1);line-height:1.02;margin-bottom:32px;opacity:0;transform:translateY(20px);animation:fu .8s ease-out .6s forwards;font-weight:200;letter-spacing:-1px}
+.hn span{color:var(--c)}
+.hd{font-size:17px;color:var(--t2);max-width:520px;line-height:1.8;margin-bottom:44px;opacity:0;transform:translateY(20px);animation:fu .8s ease-out .9s forwards}
+.hd em{color:var(--cl);font-style:normal;font-weight:400}
+.hb{display:flex;gap:12px;opacity:0;transform:translateY(20px);animation:fu .8s ease-out 1.2s forwards}
+.bp{background:var(--c);color:#fff;font-family:var(--fb);font-size:13px;font-weight:400;padding:11px 28px;border-radius:5px;border:none;cursor:pointer;transition:all .3s;display:inline-block}
+.bp:hover{background:#c04e28;transform:translateY(-1px)}
+.bs{background:transparent;color:var(--t3);font-family:var(--fb);font-size:13px;font-weight:400;padding:11px 28px;border-radius:5px;border:.5px solid var(--t5);cursor:pointer;transition:all .3s;display:inline-block}
+.bs:hover{color:var(--t2);border-color:var(--t4)}
+
+section{padding:120px 8vw}
+.sa{background:var(--bg2)}
+.sl{font-family:var(--fm);font-size:10px;color:var(--cl);letter-spacing:3px;margin-bottom:20px}
+.st{font-family:var(--fb);font-size:clamp(30px,4vw,44px);color:var(--t1);line-height:1.15;margin-bottom:28px;font-weight:200;letter-spacing:-.5px}
+.sd{height:1px;background:linear-gradient(90deg,transparent,rgba(216,90,48,.15),transparent);margin:0 8vw}
+
+.met{padding:80px 8vw;background:var(--bg2);border-top:.5px solid rgba(255,255,255,.04);border-bottom:.5px solid rgba(255,255,255,.04)}
+.mg{display:grid;grid-template-columns:repeat(4,1fr)}
+.mi{text-align:center;padding:28px 16px;position:relative;cursor:pointer;transition:background .3s}
+.mi:hover{background:rgba(216,90,48,.04)}
+.mi:not(:last-child)::after{content:'';position:absolute;right:0;top:20%;height:60%;width:.5px;background:rgba(255,255,255,.05)}
+.mv{font-family:var(--fm);font-size:clamp(26px,3.2vw,40px);font-weight:500;color:var(--c);transition:transform .3s}
+.mi:hover .mv{transform:scale(1.05)}
+.ml2{font-size:11px;color:var(--t4);letter-spacing:1.5px;margin-top:8px}
+.mh{font-family:var(--fm);font-size:9px;color:rgba(216,90,48,.4);margin-top:6px;transition:color .3s}
+.mi:hover .mh{color:var(--cl)}
+.ms{max-height:0;overflow:hidden;transition:max-height .5s ease,padding .3s,opacity .3s;opacity:0;background:var(--bg3);border-radius:0 0 8px 8px;margin:0 8vw;border:.5px solid transparent;border-top:none}
+.ms.open{max-height:200px;padding:20px 24px;opacity:1;border-color:rgba(216,90,48,.1)}
+.ms p{font-size:13px;color:var(--t2);line-height:1.7}
+
+.pg{display:grid;grid-template-columns:repeat(2,1fr);gap:20px;margin-top:48px}
+.pc{background:var(--bg3);border:.5px solid rgba(255,255,255,.04);border-radius:10px;padding:32px 28px;transition:all .4s cubic-bezier(.16,1,.3,1);cursor:default;position:relative;overflow:hidden;transform-style:preserve-3d;will-change:transform}
+.pc::before{content:'';position:absolute;top:0;left:0;right:0;height:2px;background:linear-gradient(90deg,var(--c),var(--cl));transform:scaleX(0);transform-origin:left;transition:transform .5s}
+.pc:hover::before{transform:scaleX(1)}
+.pc:hover{border-color:rgba(216,90,48,.12)}
+.pv{height:80px;margin-bottom:24px;position:relative;overflow:hidden}
+.pt2{font-family:var(--fb);font-size:22px;color:var(--t1);margin-bottom:14px;line-height:1.3;font-weight:400}
+.pd2{font-size:13px;color:var(--t3);line-height:1.75;margin-bottom:20px}
+.pd2.clamped{display:-webkit-box;-webkit-line-clamp:3;-webkit-box-orient:vertical;overflow:hidden}
+.pd2.expanded{display:block;-webkit-line-clamp:unset}
+.read-more{font-family:var(--fm);font-size:11px;color:var(--c);cursor:pointer;margin-bottom:16px;display:inline-block;transition:color .3s}
+.read-more:hover{color:var(--cl)}
+.ptg{display:flex;flex-wrap:wrap;gap:8px}
+.ptgi{font-family:var(--fm);font-size:10px;color:var(--cl);background:var(--cg);padding:4px 12px;border-radius:4px}
+
+.at{font-size:17px;color:var(--t2);max-width:660px;line-height:1.9}
+.at em{color:var(--cl);font-style:italic;font-family:var(--fb);font-size:17px;font-weight:400}
+
+/* ── HORIZONTAL TIMELINE ── */
+.htl-wrap{margin-top:48px;overflow-x:auto;overflow-y:hidden;padding-bottom:20px;-webkit-overflow-scrolling:touch;scrollbar-width:thin;scrollbar-color:var(--c) var(--bg3)}
+.htl-wrap::-webkit-scrollbar{height:4px}
+.htl-wrap::-webkit-scrollbar-track{background:var(--bg3);border-radius:2px}
+.htl-wrap::-webkit-scrollbar-thumb{background:var(--c);border-radius:2px}
+.htl{display:flex;gap:0;position:relative;padding:40px 0 20px;min-width:max-content}
+.htl::before{content:'';position:absolute;top:40px;left:20px;right:20px;height:1px;background:linear-gradient(90deg,var(--c),var(--cl),rgba(240,153,123,.2))}
+.htl-item{width:280px;flex-shrink:0;padding:0 20px;position:relative}
+.htl-dot{width:12px;height:12px;border-radius:50%;background:var(--bg);border:1.5px solid var(--c);position:absolute;top:34px;left:20px;transition:all .3s;z-index:2}
+.htl-item:hover .htl-dot{background:var(--c);box-shadow:0 0 16px rgba(216,90,48,.4)}
+.htl-content{padding-top:32px;padding-left:24px}
+.htl-date{font-family:var(--fm);font-size:10px;color:var(--t4);margin-bottom:6px;letter-spacing:.5px}
+.htl-role{font-family:var(--fb);font-size:18px;color:var(--t1);margin-bottom:4px;font-weight:400;line-height:1.3}
+.htl-co{font-size:13px;color:var(--t3);margin-bottom:10px}
+.htl-desc{font-size:12px;color:var(--t2);line-height:1.7}
+.htl-scroll-hint{font-family:var(--fm);font-size:10px;color:var(--t4);margin-top:12px;display:flex;align-items:center;gap:6px}
+.htl-scroll-hint span{display:inline-block;animation:slideR 1.5s ease-in-out infinite}
+@keyframes slideR{0%,100%{transform:translateX(0)}50%{transform:translateX(6px)}}
+
+.sg{display:grid;grid-template-columns:repeat(4,1fr);gap:16px;margin-top:48px}
+.sgr{background:var(--bg3);border:.5px solid rgba(255,255,255,.04);border-radius:8px;padding:24px}
+.sgl{font-family:var(--fm);font-size:10px;color:var(--cl);letter-spacing:1.5px;margin-bottom:14px}
+.si{display:flex;flex-wrap:wrap;gap:8px}
+.sii{font-size:12px;color:var(--t2);background:var(--bg4);padding:5px 12px;border-radius:4px;transition:all .3s}
+.sii:hover{color:var(--cl);background:var(--cg)}
+
+.cl{display:flex;gap:28px;margin-top:28px}
+.cli{font-family:var(--fm);font-size:13px;color:var(--t3);transition:color .3s;border-bottom:.5px solid transparent;padding-bottom:2px}
+.cli:hover{color:var(--c);border-bottom-color:var(--c)}
+
+footer{padding:48px 8vw;border-top:.5px solid rgba(255,255,255,.04)}
+.f-main{display:flex;justify-content:space-between;align-items:center;margin-bottom:20px}
+.f-main span{font-size:11px;color:var(--t5)}
+.fl{font-family:var(--fm)}
+.f-creds{display:flex;gap:24px;flex-wrap:wrap}
+.f-cred{font-size:11px;color:var(--t4)}
+
+.dgb{position:relative}
+.dgb::after{content:'';position:absolute;inset:0;pointer-events:none;background-image:radial-gradient(circle,rgba(216,90,48,.06) 1px,transparent 1px);background-size:32px 32px;opacity:0;transition:opacity 1.5s;z-index:0}
+.dgb.visible::after{opacity:1}
+.dgb>*{position:relative;z-index:1}
+
+@keyframes fu{from{opacity:0;transform:translateY(20px)}to{opacity:1;transform:translateY(0)}}
+.rv{opacity:0;transform:translateY(30px);transition:all .8s cubic-bezier(.16,1,.3,1)}
+.rv.visible{opacity:1;transform:translateY(0)}
+.rv1{transition-delay:.1s}.rv2{transition-delay:.2s}.rv3{transition-delay:.3s}
+.dl{stroke-dasharray:500;stroke-dashoffset:500;transition:stroke-dashoffset 2s ease-out}
+.visible .dl{stroke-dashoffset:0}
+.gb{transform:scaleY(0);transform-origin:bottom;transition:transform .6s ease-out}
+.visible .gb{transform:scaleY(1)}
+
+@media(max-width:900px){.pg{grid-template-columns:1fr}.sg{grid-template-columns:1fr 1fr}.mg{grid-template-columns:repeat(2,1fr)}.mi:nth-child(2)::after{display:none}}
+@media(max-width:600px){nav{padding:16px 5vw}section{padding:80px 6vw}.hc{padding:120px 6vw 80px}.met{padding:48px 6vw}.nk a:not(.nc){display:none}.sg{grid-template-columns:1fr}.cl{flex-direction:column;gap:14px}.f-main{flex-direction:column;gap:8px;text-align:center}.f-creds{justify-content:center}}
+</style>
+</head>
+<body>
+
+<nav id="nav"><div class="nl">VT</div><div class="nk"><a href="#work">Work</a><a href="#timeline">Timeline</a><a href="#about">About</a><a href="#contact" class="nc">Get in touch</a></div></nav>
+
+<!-- HERO -->
+<section class="hero">
+<canvas class="hero-canvas" id="hC"></canvas>
+<div class="hc">
+<div class="hl">SENIOR DATA ANALYST / BERLIN</div>
+<h1 class="hn">Vikram<br><span>Thukral</span></h1>
+<p class="hd">I don't build dashboards people tolerate.<br>I build <em>data products</em> people rely on.</p>
+<div class="hb"><a href="#work" class="bp">See my work</a><a href="Vikram_Thukral_Resume_Final.pdf" class="bs" target="_blank">Download resume</a></div>
+</div>
+</section>
+
+<!-- METRICS -->
+<div class="met rv" id="mS">
+<div class="mg">
+<div class="mi" onclick="tms(0)"><div class="mv" data-target="10" data-prefix="€" data-suffix="M+">€0</div><div class="ml2">PRODUCT REVENUE</div><div class="mh">click for story</div></div>
+<div class="mi" onclick="tms(1)"><div class="mv" data-target="15000" data-suffix="+">0</div><div class="ml2">HOURS SAVED / YEAR</div><div class="mh">click for story</div></div>
+<div class="mi" onclick="tms(2)"><div class="mv" data-target="1" data-suffix="B+">0</div><div class="ml2">ROWS PROCESSED DAILY</div><div class="mh">click for story</div></div>
+<div class="mi" onclick="tms(3)"><div class="mv" data-target="2000" data-suffix="+">0</div><div class="ml2">PLATFORM USERS</div><div class="mh">click for story</div></div>
+</div>
+</div>
+<div class="ms" id="ms0"><p>The DIP analytics platform generates over €10M in annual revenue for Delivery Hero. I own the full product pipeline — roadmap, stakeholder alignment, commercial strategy, and data monetisation.</p></div>
+<div class="ms" id="ms1"><p>The Partner Reporting Tool (PRT) saves 15 local teams ~40 hours each per quarter in manual reporting. Combined with 2000+ DIP users saving ~2 hours/month through better self-serve analytics, total organisational time saved exceeds 15,000 hours annually.</p></div>
+<div class="ms" id="ms2"><p>The DIP platform processes over 1 billion rows daily through Google BigQuery. I optimised all queries for cost-efficiency — ensuring maximum insight from minimum compute spend.</p></div>
+<div class="ms" id="ms3"><p>Over 2000 active users across APAC, MENA, LATAM, and Europe rely on the DIP platform daily. I grew this from zero, onboarding region by region and establishing analytics structures for each market.</p></div>
+
+<div class="sd"></div>
+
+<!-- PROJECTS (moved before About) -->
+<section id="work" class="sa dgb">
+<div class="rv"><div class="sl">SELECTED WORK</div><h2 class="st">Things I've built.</h2></div>
+<div class="pg">
+<div class="pc rv tc2">
+<div class="pv"><svg width="100%" height="80" viewBox="0 0 300 80" preserveAspectRatio="xMidYMid meet"><path class="dl" d="M10 70Q40 68 70 58T130 42T190 28T240 18T290 12" fill="none" stroke="#D85A30" stroke-width="1.5" stroke-linecap="round"/><path d="M10 72Q40 70 70 64T130 52T190 44T240 38T290 32" fill="none" stroke="#F0997B" stroke-width=".6" opacity=".3" stroke-dasharray="3 3"/><line x1="10" y1="75" x2="290" y2="75" stroke="#222" stroke-width=".3"/></svg></div>
+<h3 class="pt2">Data Insights Platform (DIP)</h3>
+<p class="pd2 clamped" id="pd-0">A data monetisation product I own end-to-end at Delivery Hero, generating €10M+ annually. DIP is a one-stop analytics platform for CPG partners — modular dashboards covering sales performance, market share, competitor benchmarking, availability and out-of-stock tracking, store featuring, and customer search insights. Partners start with basic sales modules (sometimes bundled free with DH Ads), then upgrade to premium tiers for deeper competitive and demand data. I built the data layer, shaped the commercial upsell strategy, and scaled it to 2000+ users across four global regions.</p>
+<span class="read-more" onclick="toggleRead(this,'pd-0')">read more +</span>
+<div class="ptg"><span class="ptgi">Looker</span><span class="ptgi">dbt</span><span class="ptgi">BigQuery</span><span class="ptgi">LookML</span><span class="ptgi">Data Monetisation</span></div>
+</div>
+<div class="pc rv rv1 tc2">
+<div class="pv"><svg width="100%" height="80" viewBox="0 0 300 80" preserveAspectRatio="xMidYMid meet"><rect x="10" y="20" width="100" height="22" rx="4" fill="none" stroke="#333" stroke-width=".5"/><text x="20" y="35" font-size="9" fill="#555" font-family="JetBrains Mono,monospace">ask a question...</text><line class="dl" x1="120" y1="31" x2="155" y2="31" stroke="#D85A30" stroke-width="1"/><circle cx="168" cy="31" r="10" fill="none" stroke="#D85A30" stroke-width=".6" opacity=".5"/><circle cx="168" cy="31" r="4" fill="#D85A30" opacity=".3"/><line class="dl" x1="180" y1="31" x2="210" y2="31" stroke="#D85A30" stroke-width="1" style="transition-delay:.4s"/><rect x="220" y="16" width="70" height="44" rx="4" fill="none" stroke="#D85A30" stroke-width=".5" opacity=".3"/><rect class="gb" x="228" y="40" width="8" height="16" fill="#D85A30" opacity=".5" rx="1"/><rect class="gb" x="240" y="32" width="8" height="24" fill="#D85A30" opacity=".6" rx="1" style="transition-delay:.2s"/><rect class="gb" x="252" y="26" width="8" height="30" fill="#F0997B" opacity=".7" rx="1" style="transition-delay:.4s"/><rect class="gb" x="264" y="22" width="8" height="34" fill="#F0997B" opacity=".8" rx="1" style="transition-delay:.6s"/></svg></div>
+<h3 class="pt2">Gemini-Powered Looker Agents</h3>
+<p class="pd2 clamped" id="pd-1">Built 6 AI agents on top of Looker Conversations using Gemini, giving non-technical stakeholders the ability to query DIP data in plain English. Each agent maps to a specific domain (sales, availability, search, etc.) with carefully constructed context so Gemini generates accurate Explore queries. This eliminates the ad-hoc request bottleneck — instead of waiting for an analyst to write LookML, partners and commercial teams get answers in seconds.</p>
+<span class="read-more" onclick="toggleRead(this,'pd-1')">read more +</span>
+<div class="ptg"><span class="ptgi">Gemini AI</span><span class="ptgi">Looker</span><span class="ptgi">LookML</span><span class="ptgi">NLP</span></div>
+</div>
+<div class="pc rv rv2 tc2">
+<div class="pv"><svg width="100%" height="80" viewBox="0 0 300 80" preserveAspectRatio="xMidYMid meet"><rect x="20" y="18" width="100" height="52" rx="4" fill="none" stroke="#D85A30" stroke-width=".6" opacity=".4"/><text x="70" y="14" text-anchor="middle" font-size="8" fill="#D85A30" font-family="JetBrains Mono,monospace">variant A</text><rect class="gb" x="32" y="46" width="14" height="20" fill="#D85A30" opacity=".5" rx="1"/><rect class="gb" x="52" y="38" width="14" height="28" fill="#D85A30" opacity=".6" rx="1" style="transition-delay:.1s"/><rect class="gb" x="72" y="32" width="14" height="34" fill="#D85A30" opacity=".7" rx="1" style="transition-delay:.2s"/><rect class="gb" x="92" y="28" width="14" height="38" fill="#D85A30" opacity=".8" rx="1" style="transition-delay:.3s"/><rect x="180" y="18" width="100" height="52" rx="4" fill="none" stroke="#F0997B" stroke-width=".6" opacity=".4"/><text x="230" y="14" text-anchor="middle" font-size="8" fill="#F0997B" font-family="JetBrains Mono,monospace">variant B</text><rect class="gb" x="192" y="50" width="14" height="16" fill="#F0997B" opacity=".4" rx="1" style="transition-delay:.15s"/><rect class="gb" x="212" y="42" width="14" height="24" fill="#F0997B" opacity=".5" rx="1" style="transition-delay:.25s"/><rect class="gb" x="232" y="36" width="14" height="30" fill="#F0997B" opacity=".6" rx="1" style="transition-delay:.35s"/><rect class="gb" x="252" y="44" width="14" height="22" fill="#F0997B" opacity=".5" rx="1" style="transition-delay:.45s"/><text x="150" y="50" text-anchor="middle" font-size="10" fill="#333" font-family="JetBrains Mono,monospace">vs</text></svg></div>
+<h3 class="pt2">Experimentation Infrastructure</h3>
+<p class="pd2 clamped" id="pd-2">Built the end-to-end A/B testing infrastructure for a product search ranking model across 6 global regions. I designed the FACT and assignment SQL queries, configured experiment definitions and metrics in Eppo using unique user identifiers, and built the visualisation layer that showed whether new ranking variants outperformed the baseline. Results varied by region — some variants won, others didn't — and my reporting gave product teams the confidence to ship or kill each variant.</p>
+<span class="read-more" onclick="toggleRead(this,'pd-2')">read more +</span>
+<div class="ptg"><span class="ptgi">Eppo</span><span class="ptgi">SQL</span><span class="ptgi">Experimentation</span><span class="ptgi">6 Regions</span></div>
+</div>
+<div class="pc rv rv3 tc2">
+<div class="pv"><svg width="100%" height="80" viewBox="0 0 300 80" preserveAspectRatio="xMidYMid meet"><rect x="20" y="16" width="50" height="18" rx="3" fill="#D85A30" opacity=".35"/><text x="45" y="28" text-anchor="middle" font-size="7" fill="#F0997B" font-family="JetBrains Mono,monospace">source</text><rect x="120" y="16" width="60" height="18" rx="3" fill="#D85A30" opacity=".5"/><text x="150" y="28" text-anchor="middle" font-size="7" fill="#F0997B" font-family="JetBrains Mono,monospace">staging</text><rect x="230" y="16" width="50" height="18" rx="3" fill="#D85A30" opacity=".65"/><text x="255" y="28" text-anchor="middle" font-size="7" fill="#f2f2f2" font-family="JetBrains Mono,monospace">mart</text><rect x="20" y="50" width="50" height="18" rx="3" fill="#F0997B" opacity=".25"/><text x="45" y="62" text-anchor="middle" font-size="7" fill="#F0997B" font-family="JetBrains Mono,monospace">source</text><rect x="120" y="50" width="60" height="18" rx="3" fill="#F0997B" opacity=".4"/><text x="150" y="62" text-anchor="middle" font-size="7" fill="#F0997B" font-family="JetBrains Mono,monospace">staging</text><line class="dl" x1="70" y1="25" x2="120" y2="25" stroke="#D85A30" stroke-width=".7" opacity=".5"/><line class="dl" x1="180" y1="25" x2="230" y2="25" stroke="#D85A30" stroke-width=".7" opacity=".5" style="transition-delay:.3s"/><line class="dl" x1="70" y1="59" x2="120" y2="59" stroke="#F0997B" stroke-width=".7" opacity=".4" style="transition-delay:.2s"/><line class="dl" x1="180" y1="59" x2="230" y2="25" stroke="#F0997B" stroke-width=".7" opacity=".4" style="transition-delay:.5s"/></svg></div>
+<h3 class="pt2">dbt + Airflow Data Pipeline</h3>
+<p class="pd2 clamped" id="pd-3">Designed and deployed the core data infrastructure powering the entire DIP platform — 20+ incremental dbt models processing 1B+ rows daily through BigQuery, orchestrated via Airflow. Every model is documented with yml configs for downstream governance. I built this from scratch as a Data Analyst, then upon promotion, hired 2 data engineers and transitioned ownership to them — while retaining architectural oversight and review authority.</p>
+<span class="read-more" onclick="toggleRead(this,'pd-3')">read more +</span>
+<div class="ptg"><span class="ptgi">dbt</span><span class="ptgi">Airflow</span><span class="ptgi">BigQuery</span><span class="ptgi">SQL</span><span class="ptgi">Data Governance</span></div>
+</div>
+</div>
+</section>
+
+<div class="sd"></div>
+
+<!-- ABOUT (moved after Projects) -->
+<section id="about" class="dgb">
+<div class="rv">
+<div class="sl">ABOUT</div>
+<h2 class="st">Data should be beautiful enough<br>to use voluntarily.</h2>
+<p class="at">I believe the best analytics tools are the ones nobody calls "tools." They're just the place you go to understand what's happening in your business. If someone has to be trained to use a dashboard, the dashboard has failed. If a data point needs a footnote to explain itself, the data model is wrong.<br><br>This is the lens I bring to everything I build — from the data models underneath to the interfaces on top. Data infrastructure should be as carefully designed as the product that sits on it. I've learned that the gap between <em>"technically correct"</em> and <em>"genuinely useful"</em> is where most analytics work dies. I try to close that gap.<br><br>When I'm not building data products in Berlin, I'm probably reading AI research papers or optimising something that doesn't need optimising.</p>
+</div>
+</section>
+
+<div class="sd"></div>
+
+<!-- HORIZONTAL TIMELINE -->
+<section id="timeline" class="sa">
+<div class="rv"><div class="sl">CAREER</div><h2 class="st">Where I've been.</h2>
+<div class="htl-scroll-hint">scroll to explore <span>→</span></div>
+</div>
+<div class="htl-wrap rv">
+<div class="htl">
+<div class="htl-item"><div class="htl-dot"></div><div class="htl-content"><div class="htl-date">Mar 2024 — Present</div><div class="htl-role">Senior Data Analyst</div><div class="htl-co">Delivery Hero SE · Berlin</div><div class="htl-desc">Own €10M+ DIP product pipeline. Manage 2 data engineers + 1 full-stack engineer. Building Gemini-powered Looker agents. Present to C-suite. Employee Spotlight award (Oct 2025). Mentor junior analysts.</div></div></div>
+<div class="htl-item"><div class="htl-dot"></div><div class="htl-content"><div class="htl-date">Sep 2022 — Mar 2024</div><div class="htl-role">Data Analyst</div><div class="htl-co">Delivery Hero SE · Berlin</div><div class="htl-desc">Built 20+ dbt models from scratch. Launched PRT (15+ hrs/week saved per team). Overhauled 14 dashboards. Grew DIP to 688 users across 4 regions.</div></div></div>
+<div class="htl-item"><div class="htl-dot"></div><div class="htl-content"><div class="htl-date">Sep 2019 — Aug 2022</div><div class="htl-role">Consultant — Power BI</div><div class="htl-co">Fractal Analytics · Mumbai</div><div class="htl-desc">BI solutions for Procter & Gamble and enterprise clients. Design module adopted org-wide. Star Award (Innovation) + 2 Spot Awards.</div></div></div>
+<div class="htl-item"><div class="htl-dot"></div><div class="htl-content"><div class="htl-date">Jun 2017 — Sep 2019</div><div class="htl-role">BI Analyst</div><div class="htl-co">Polestar Solutions · Noida</div><div class="htl-desc">Reckitt Benckiser, Royal Enfield, Genpact. Python web scraper. Azure ML attrition model (78% accuracy).</div></div></div>
+<div class="htl-item"><div class="htl-dot"></div><div class="htl-content"><div class="htl-date">2013 — 2017</div><div class="htl-role">B.Tech, Electrical Engineering</div><div class="htl-co">Delhi College of Engineering (DTU)</div><div class="htl-desc">New Delhi, India</div></div></div>
+</div>
+</div>
+</section>
+
+<div class="sd"></div>
+
+<!-- TOOLKIT (trimmed — no certs/education, moved to footer) -->
+<section id="stack" class="dgb">
+<div class="rv"><div class="sl">TOOLKIT</div><h2 class="st">What I work with.</h2></div>
+<div class="sg rv">
+<div class="sgr"><div class="sgl">LANGUAGES</div><div class="si"><span class="sii">Python</span><span class="sii">SQL</span><span class="sii">DAX</span><span class="sii">R</span><span class="sii">LookML</span></div></div>
+<div class="sgr"><div class="sgl">BI & ANALYTICS</div><div class="si"><span class="sii">Looker</span><span class="sii">Power BI</span><span class="sii">Tableau</span><span class="sii">BigQuery</span><span class="sii">Databricks</span><span class="sii">Eppo</span></div></div>
+<div class="sgr"><div class="sgl">DATA & ML</div><div class="si"><span class="sii">dbt</span><span class="sii">Airflow</span><span class="sii">pandas</span><span class="sii">scikit-learn</span><span class="sii">TensorFlow</span><span class="sii">Azure ML</span></div></div>
+<div class="sgr"><div class="sgl">TOOLS</div><div class="si"><span class="sii">Git</span><span class="sii">Claude Code</span><span class="sii">Gemini AI</span><span class="sii">SSMS</span><span class="sii">Power Automate</span><span class="sii">Power Apps</span></div></div>
+</div>
+</section>
+
+<div class="sd"></div>
+
+<!-- CONTACT -->
+<section id="contact" class="sa">
+<div class="rv">
+<div class="sl">CONNECT</div>
+<h2 class="st">Let's build something worth opening.</h2>
+<p class="at" style="margin-bottom:12px">I'm exploring roles where data quality, product thinking, and design are taken seriously — Senior Data Analyst, Lead Analyst, or Analytics Engineer.</p>
+<div class="cl"><a href="mailto:vikramthukral@me.com" class="cli">vikramthukral@me.com</a><a href="https://www.linkedin.com/in/vikramjeet" target="_blank" class="cli">LinkedIn ↗</a><a href="Vikram_Thukral_Resume_Final.pdf" target="_blank" class="cli">Resume ↗</a></div>
+</div>
+</section>
+
+<!-- FOOTER with certs/education -->
+<footer>
+<div class="f-main"><span class="fl">VT / 2026</span><span>Built with care in Berlin</span></div>
+<div class="f-creds">
+<span class="f-cred">Six Sigma Green Belt — KPMG</span>
+<span class="f-cred">ML Foundations — Coursera</span>
+<span class="f-cred">TensorFlow for AI — Coursera</span>
+<span class="f-cred">B.Tech Electrical Eng. — DTU</span>
+</div>
+</footer>
+
+<script>
+!function(){const c=document.getElementById('hC'),x=c.getContext('2d');let p=[];function rs(){c.width=innerWidth;c.height=innerHeight}rs();addEventListener('resize',rs);class P{constructor(){this.x=Math.random()*c.width;this.y=Math.random()*c.height;this.vx=(Math.random()-.5)*.35;this.vy=(Math.random()-.5)*.35;this.r=Math.random()*2+.5;this.c=Math.random()>.5?'#D85A30':'#F0997B';this.a=Math.random()*.35+.08}update(){this.x+=this.vx;this.y+=this.vy;if(this.x<0||this.x>c.width)this.vx*=-1;if(this.y<0||this.y>c.height)this.vy*=-1}draw(){x.beginPath();x.arc(this.x,this.y,this.r,0,Math.PI*2);x.fillStyle=this.c;x.globalAlpha=this.a;x.fill()}}for(let i=0;i<55;i++)p.push(new P);!function a(){x.clearRect(0,0,c.width,c.height);for(let i=0;i<p.length;i++){p[i].update();p[i].draw();for(let j=i+1;j<p.length;j++){const dx=p[i].x-p[j].x,dy=p[i].y-p[j].y,d=Math.sqrt(dx*dx+dy*dy);if(d<140){x.beginPath();x.moveTo(p[i].x,p[i].y);x.lineTo(p[j].x,p[j].y);x.strokeStyle='#D85A30';x.globalAlpha=(1-d/140)*.06;x.lineWidth=.5;x.stroke()}}}x.globalAlpha=1;requestAnimationFrame(a)}()}();
+addEventListener('scroll',()=>document.getElementById('nav').classList.toggle('scrolled',scrollY>50));
+const obs=new IntersectionObserver(e=>e.forEach(n=>{if(n.isIntersecting)n.target.classList.add('visible')}),{threshold:.08,rootMargin:'0px 0px -30px 0px'});
+document.querySelectorAll('.rv,.dgb').forEach(e=>obs.observe(e));
+const cO=new IntersectionObserver(e=>e.forEach(n=>{if(n.isIntersecting){n.target.querySelectorAll('.mv').forEach(c=>{const t=+c.dataset.target,pf=c.dataset.prefix||'',sf=c.dataset.suffix||'';let cur=0;const inc=t/50,tm=setInterval(()=>{cur+=inc;if(cur>=t){cur=t;clearInterval(tm)}c.textContent=pf+(t>=1000?Math.round(cur).toLocaleString():Math.round(cur))+sf},30)});cO.unobserve(n.target)}}),{threshold:.3});
+document.querySelectorAll('.met').forEach(e=>cO.observe(e));
+let os=-1;function tms(i){document.querySelectorAll('.ms').forEach((s,x)=>{if(x===i&&os!==i){s.classList.add('open');os=i}else{s.classList.remove('open');if(x===i)os=-1}})}
+function toggleRead(btn,id){const p=document.getElementById(id);const ex=p.classList.contains('expanded');p.classList.toggle('clamped',ex);p.classList.toggle('expanded',!ex);btn.textContent=ex?'read more +':'show less −'}
+document.querySelectorAll('.tc2').forEach(card=>{card.addEventListener('mousemove',e=>{const r=card.getBoundingClientRect();const mx=(e.clientX-r.left)/r.width-.5;const my=(e.clientY-r.top)/r.height-.5;card.style.transform=`perspective(800px) rotateY(${mx*6}deg) rotateX(${-my*6}deg) translateY(-2px)`});card.addEventListener('mouseleave',()=>{card.style.transform='perspective(800px) rotateY(0) rotateX(0) translateY(0)'})});
+document.querySelectorAll('nav a[href^="#"]').forEach(a=>{a.addEventListener('click',e=>{e.preventDefault();const t=document.querySelector(a.getAttribute('href'));if(t)t.scrollIntoView({behavior:'smooth',block:'start'})})});
+</script>
+</body>
+</html>
